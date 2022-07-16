@@ -4,14 +4,18 @@
         $multipleBtn = <<<EOL
         <a href="logout.php">LOGOUT</a>
         <a><button id="themeMoon" class="button1" onclick="darkMode()"><i class="fa fa-moon-o" aria-hidden="true"></i></button></a>
-
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+        <i class="fa fa-bars"></i>
+        </a>
         EOL ;
     }else{
         $multipleBtn = <<<EOL
         <a href="login.php">LOGIN</a>
         <a href="register.php">REGISTER</a>
         <a><button id="themeMoon" class="button1" onclick="darkMode()"><i class="fa fa-moon-o" aria-hidden="true"></i></button></a>
-
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+        <i class="fa fa-bars"></i>
+        </a>
         EOL ;
     }
 

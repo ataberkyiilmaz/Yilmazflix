@@ -4,13 +4,18 @@
         $multipleBtn = <<<EOL
         <a href="logout.php">LOGOUT</a>
         <a><button  id="themeMoon" class="button1" onclick="darkMode()"><i class="fa fa-moon-o" aria-hidden="true"></i></button></a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+        <i class="fa fa-bars"></i>
+        </a>
         EOL ;
     }else{
         $multipleBtn = <<<EOL
         <a href="login.php">LOGIN</a>
         <a href="register.php">REGISTER</a>
         <a><button  id="themeMoon" class="button1" onclick="darkMode()"><i class="fa fa-moon-o" aria-hidden="true"></i></button></a>
-        
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+        <i class="fa fa-bars"></i>
+        </a>
         EOL ;
     }
 
@@ -61,7 +66,7 @@
 
                     echo '<div class="column">
                     <div class="row">
-                    <a href="movie.php?id=' . $result['id'] . '"><img src="'."http://image.tmdb.org/t/p/w500".''. $result['poster_path'] . '" width="140" height="180"></a><h4>' . $result['original_title']. "</h4><h5>"." Rate : " . $result['vote_average'] . " | Vote : " . $result['vote_count'] ."</h5> </h6>"."Popularity : " . round($result['popularity']) . "</h6>
+                    <a href="movie.php?id=' . $result['id'] . '"><img src="'."http://image.tmdb.org/t/p/w500".''. $result['poster_path'] . '" width="140" height="180"></a><a><h4>' . $result['original_title']. "</h4></a><h5>"." Rate : " . $result['vote_average'] . " | Vote : " . $result['vote_count'] ."</h5> </h6>"."Popularity : " . round($result['popularity']) . "</h6>
                     </div>
                     </div>";
                     

@@ -25,3 +25,29 @@ function darkMode() {
         localStorage.darkMode = true;
     }
 }
+
+function responsiveNavbar() {
+    var x = document.getElementById("navbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+
+    if (x.className === "navbar_left") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar_left";
+    }
+
+    if (x.className === "navbar_right") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar_right";
+    }
+    if (x.className === "navbar_mid") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar_mid";
+    }
+}
